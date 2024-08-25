@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+:root {
+    --primer-color: #F5F7F8;
+    --segundo-color: #1E201E;
+    --tercer-color: #982B1C;
+
+    --backgroundcolor-hover-botón-1: #A67B5B;
+    --backgroundcolor-click-botón-1: #6F4E37;
+    --backgroundcolor-hover-botón-2: #C0C78C;
+    --backgroundcolor-click-botón-2: #A6B37D;
+
+    --boxshadowcolor-botones: #697565;
+    --boxshadow-color-click-botones: #3C3D37;
+
+    --color-footer: #A67B5B;
+
+    --fuente-NotoSans: "Noto Sans", sans-serif;
+    --fuente-DancingScript: "Dancing Script", cursive;
+}
+
+* {
+    font-family: var(--fuente-NotoSans);
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    background-color: var(--primer-color);
+}
+
+#título {
+    text-align: center;
+}
+
+#pauta {
+    font-size: 1rem;
+    vertical-align: text-bottom;
+    margin-left: 5rem;
+    margin-bottom: -3rem;
+    color: var(--segundo-color);
+}
+
+#pauta strong{
+    color: var(--tercer-color);
+}
+
+textarea {
+    resize: none;
+}
+
+
+#áreas-de-texto {
+    margin-top: -2rem;
+    margin-bottom: -0.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.área-de-texto-1 {
+    border-radius: 0.5rem;
+    width: 40rem;
+    height: 15rem;
+    margin: 4rem;
+}
+
+.área-de-texto-2 {
+    background-image: url(./Imágenes/Imagen\ encriptador\ de\ texto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-origin: content-box;
+    border-radius: 0.5rem;
+    width: 40rem;
+    height: 15rem;
+    margin: 4rem;
+}
+
+.área-de-texto-2:focus {
+    background-image: none;
+}
+
+
+#botón-para-limpiar {
+    margin-top: -3.5rem;
+    margin-left: 30rem;
+    display: flex;
+    gap: 15rem;
+}
+
+.botón-limpiar-1:hover {
+    cursor: pointer;
+}
+
+.botón-limpiar-1:active {
+    transform: translateY(0.1rem);
+}
+
+.botón-limpiar-2:hover {
+    cursor: pointer;
+}
+
+.botón-limpiar-2:active {
+    transform: translateY(0.1rem);
+}
+
+
+#botón-copiar {
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 5rem;
+    width: 11rem;
+    height: 4rem;
+    margin-top: -2rem;
+    margin-left: 70rem;
+    box-shadow: 0rem 0.5rem 0.5rem var(--boxshadowcolor-botones);
+}
+
+#botón-copiar:hover {
+    cursor: pointer;
+}
+
+#botón-copiar:active {
+    box-shadow: 0rem 0.5rem 0rem var(--boxshadow-color-click-botones);
+    transform: translateY(0.1rem);
+}
+
+
+#botones-encriptar-desencriptar {
+    margin-left: 7.5rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.botón-e-d-1 {
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 5rem;
+    width: 11rem;
+    height: 4rem;
+    box-shadow: 0rem 0.5rem 0.5rem var(--boxshadowcolor-botones);
+}
+
+.botón-e-d-2 {
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 5rem;
+    width: 11rem;
+    height: 4rem;
+    box-shadow: 0rem 0.5rem 0.5rem var(--boxshadowcolor-botones);
+}
+
+.botón-e-d-1:hover {
+    background-color: var(--backgroundcolor-hover-botón-1);
+    cursor: pointer;
+}
+
+.botón-e-d-1:active {
+    background-color: var(--backgroundcolor-click-botón-1);
+    box-shadow: 0rem 0.5rem 0rem var(--boxshadow-color-click-botones);
+    transform: translateY(0.1rem);
+}
+
+.botón-e-d-2:hover {
+    background-color: var(--backgroundcolor-hover-botón-2);
+    cursor: pointer;
+}
+
+.botón-e-d-2:active {
+    background-color: var(--backgroundcolor-click-botón-2);
+    box-shadow: 0rem 0.5rem 0rem var(--boxshadow-color-click-botones);
+    transform: translateY(0.1rem);
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 5rem;
+    padding-bottom: 0.2rem;
+    font-family: var(--fuente-NotoSans);
+    font-weight: 1000rem;
+    background-color: var(--color-footer);
+    border-radius: 1rem;
+}
+
+#Autor {
+    font-family: var(--fuente-DancingScript);
+}
+
+/*Media Query para celulares*/
+@media (max-width: 480px) {
+   
+    
+    #título {
+        font-size: 1rem;
+        margin-left: -10rem;
+    }
+    
+    #pauta {
+        font-size: 0.7rem;
+        margin-left: 0rem;
+        margin-bottom: -3rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    
+    #áreas-de-texto {
+        margin-left: -3.5rem;
+        margin-top: 2rem;
+        margin-right: 6rem;;
+    }
+    
+    .área-de-texto-1 {
+        border-radius: 0.5rem;
+        width: 100%;
+        height: 15rem;
+        margin-right: 0rem;
+    }
+    
+    .área-de-texto-2 {
+        border-radius: 0.5rem;
+        width: 100%;
+        height: 15rem;
+        margin-left: 0rem;
+    }
+    
+    
+    #botón-para-limpiar {
+        margin-top: -3.5rem;
+        margin-bottom: 3rem;
+        margin-left: 3rem;
+        gap: 3rem;
+    }
+    
+    .botón-limpiar-1 {
+        margin-left: 2rem;
+        word-wrap: break-word;
+    }
+    
+    .botón-limpiar-2 {
+        word-wrap: break-word;
+    }
+    
+    
+    #botón-copiar {
+        margin-left: 14rem;
+        width: 5rem;
+        height: 3rem;
+        word-wrap: break-word;
+    }
+    
+
+    #botones-encriptar-desencriptar {
+        margin-top: -1rem;
+        margin-bottom: -1.5rem;
+        margin-left: 0rem;
+        display: flex;
+        gap: 4rem;
+    }
+    
+    .botón-e-d-1 {
+        margin-top: -2rem;
+        font-weight: 500;
+        font-size: 1rem;
+        width: 5rem;
+        height: 10rem;
+        word-wrap: break-word;
+    }
+    
+    .botón-e-d-2 {
+        margin-top: -2rem;
+        margin-left: -4rem;
+        font-weight: 500;
+        font-size: 1rem;
+        width: 5rem;
+        height: 10rem;
+        word-wrap: break-word;
+    }
+    
+
+    footer {
+        margin-top: 4.3rem;
+        margin-left: -10rem;
+        font-size: 1rem;
+    }
+}
+
+/*Media Query para tablets*/
+@media(max-width: 1024px) {
+    #título {
+        font-size: 1.5rem;
+        margin-left: -10rem;
+    }
+    
+    #pauta {
+        font-size: 1rem;
+        margin-left: 0rem;
+        margin-bottom: -3rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    
+    #áreas-de-texto {
+        margin-left: -3.5rem;
+        margin-top: 2rem;
+        margin-right: 6rem;;
+    }
+    
+    .área-de-texto-1 {
+        border-radius: 0.5rem;
+        width: 100%;
+        height: 15rem;
+        margin-right: 1rem
+    }
+    
+    .área-de-texto-2 {
+        border-radius: 0.5rem;
+        width: 100%;
+        height: 15rem;
+        margin-left: 1rem;
+    }
+    
+    
+    #botón-para-limpiar {
+        margin-top: -3.5rem;
+        margin-bottom: 3rem;
+        margin-left: 20rem;
+        gap: 2rem;
+    }
+    
+    .botón-limpiar-1 {
+        margin-left: 2rem;
+        word-wrap: break-word;
+    }
+    
+    .botón-limpiar-2 {
+        word-wrap: break-word;
+    }
+    
+    
+    #botón-copiar {
+        margin-left: 48rem;
+        width: 5rem;
+        height: 3rem;
+        word-wrap: break-word;
+    }
+    
+
+    #botones-encriptar-desencriptar {
+        margin-top: -1rem;
+        margin-bottom: -1.5rem;
+        margin-left: 0rem;
+        display: flex;
+        gap: 4rem;
+    }
+    
+    .botón-e-d-1 {
+        margin-top: -2rem;
+        font-weight: 500;
+        font-size: 1rem;
+        width: 11rem;
+        height: 4rem;
+        word-wrap: break-word;
+    }
+    
+    .botón-e-d-2 {
+        margin-top: -2rem;
+        margin-left: -4rem;
+        font-weight: 500;
+        font-size: 1rem;
+        width: 11rem;
+        height: 4rem;
+        word-wrap: break-word;
+    }
+    
+
+    footer {
+        margin-top: 4.3rem;
+        margin-left: -10rem;
+        font-size: 1rem;
+    }
+}
